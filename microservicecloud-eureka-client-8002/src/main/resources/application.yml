@@ -1,0 +1,50 @@
+
+server:
+  port: 8002
+
+
+spring:
+  application:
+    name: microservicecloud-eurekaclient-examples # 应用名称
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: com.mysql.jdbc.Driver           # mysql驱动包
+    url: jdbc:mysql://localhost:3306/microservicecloud1              # 数据库名称
+    username: ff
+    password: ff123
+
+    druid:
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 6000
+      time-between-eviction-runs-millis: 6000
+      min-evictable-idle-time-millis: 30000
+      validation-query: SELECT 1 FROM DUAL
+      pool-prepared-statements: true
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      use-global-data-source-stat: true
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: stat,wall,log4j2
+      test-while-idle: true
+      test-on-borrow: true
+      test-on-return: true
+
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://eurekaservice7001.com:7001/eureka/,http://eurekaservice7002.com:7002/eureka/
+      # 将该service注册到集群eureka中
+      #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  instance:
+    instance-id: microservicecloud-eurekaclient8002   # 在eureka中显示对应的服务名字
+    prefer-ip-address: true     #在eureka中下边的访问路径可以显示IP地址
+
+info: # 在eureka中可以点击info链接，显示有值。链接后的内容就是在这里配置的
+  app.name: ff-microservicecloud
+  company.name: www.ff.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
+  app.description: ${project.description}

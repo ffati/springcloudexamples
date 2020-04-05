@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="microservicecloud-eureka-client-8001" />
+        <module name="microservicecloud-consumer-80" />
+        <module name="microservicecloud-eureka-service-7002" />
+        <module name="microservicecloud-eureka-service-7001" />
+        <module name="microservicecloud-consumer-feign" />
+        <module name="microservicecloud-currency" />
+        <module name="microservicecloud-eureka-client-8002" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="microservicecloud-consumer-80" options="" />
+      <module name="microservicecloud-consumer-feign" options="" />
+      <module name="microservicecloud-currency" options="" />
+      <module name="microservicecloud-eureka-client-8001" options="" />
+      <module name="microservicecloud-eureka-client-8002" options="" />
+      <module name="microservicecloud-eureka-service-7001" options="" />
+      <module name="microservicecloud-eureka-service-7002" options="" />
+    </option>
+  </component>
+</project>
