@@ -51,5 +51,5 @@
 
 远程配置中心地址
 
-         https://github.com/ffati/microservicecloud-configService-test
+https://github.com/ffati/microservicecloud-configService-test
 
