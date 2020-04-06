@@ -12,6 +12,8 @@
   
 
         <module>microservicecloud-zuul-9527</module>
+         --zuul网关demo
+        
         <module>microservicecloud-config-service-3344</module>
         --实现config的config服务端的demo，负责和git库（https://github.com/ffati/microservicecloud-configService-test.git）交互
         
