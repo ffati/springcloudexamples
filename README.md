@@ -12,6 +12,8 @@
   
 
         <module>microservicecloud-zuul-9527</module>
+         --zuul网关demo
+        
         <module>microservicecloud-config-service-3344</module>
         --实现config的config服务端的demo，负责和git库（https://github.com/ffati/microservicecloud-configService-test.git）交互
         
@@ -46,4 +48,10 @@
         
         <module>microservicecloud-consumer-80</module>
         --ribbon搭配RestTemplate实现负载均衡的消费端demo
+
+
+
+远程配置中心地址
+
+https://github.com/ffati/microservicecloud-configService-test
 
